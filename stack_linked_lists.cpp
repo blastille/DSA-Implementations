@@ -24,12 +24,11 @@ public:
 		if (isEmpty())
 			cout << "Stack is empty.";
 		else {
-			node* temp = new node;
-			temp = top;
+			node* temp = top;
 			stackTop = top->item;
 			top = top->next;
-			temp = temp->next = nullptr;
 			delete temp;
+
 		}
 	}
 	void getTop(t& stackTop) {
